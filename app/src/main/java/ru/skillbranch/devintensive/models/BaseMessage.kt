@@ -1,42 +1,32 @@
 package ru.skillbranch.devintensive.models
 
-import android.service.voice.AlwaysOnHotwordDetector
 import java.util.*
-import kotlin.reflect.typeOf
 
 abstract class BaseMessage(
     val id: String,
     val from: User?,
     val chat: Chat,
-    val isIncomig: Boolean = false,
+    val isIncoming: Boolean = false,
     val date: Date = Date()
 ) {
+
     abstract fun formatMessage(): String
 
-    companion object AbstractFatory {
+    companion object AbstractFactory {
         var lastId = -1
-        fun makeMassege(
+
+        fun makeMessage(
             from: User?,
             chat: Chat,
             date: Date = Date(),
             type: String = "text",
-            payload: Any?
+            payload: Any?,
+            isIncoming: Boolean = false
         ): BaseMessage {
             lastId++
             return when (type) {
-                "image" -> ImageMessage(
-                    "$lastId",
-                    from,
-                    chat,
-                    date = date,
-                    image = payload as String
-                )
-                else -> TextMassage(
-                    "$lastId",
-                    from,
-                    chat,
-                    date = date,
-                    text = payload as String)
+                "image" -> ImageMessage("$lastId", from, chat, isIncoming, date, payload.toString())
+                else -> TextMessage("$lastId", from, chat, isIncoming, date, payload.toString())
             }
         }
     }
