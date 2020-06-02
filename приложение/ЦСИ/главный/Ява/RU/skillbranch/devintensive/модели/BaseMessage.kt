@@ -2,7 +2,6 @@ package ru.skillbranch.devintensive.models
 
 import android.service.voice.AlwaysOnHotwordDetector
 import java.util.*
-import kotlin.reflect.typeOf
 
 abstract class BaseMessage(
     val id: String,
