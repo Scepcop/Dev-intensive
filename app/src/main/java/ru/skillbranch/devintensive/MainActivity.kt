@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
         //    banderImage = findViewById(R.id.iv_baner) as ImageView
-        banderImage = iv_baner
+        banderImage = iv_bender
         textTxt = tv_text
         messageEt = et_message
         sendBtn = iv_send

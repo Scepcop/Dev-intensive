@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_baner"
+        android:id="@+id/iv_bender"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
