@@ -12,7 +12,7 @@ class Bender(var status: Status = Status.NORMAL, var question: Question = Questi
 
     }
 
-    fun listenerAnswer(answer: String): Pair<String, Triple<Int, Int, Int>> { //получает текст из поля эдит текст
+    fun listenAnswer(answer: String): Pair<String, Triple<Int, Int, Int>> { //получает текст из поля эдит текст
        return if (question.answers.contains(answer)) {
            question = question.nextQuestion()
             "Отлично эо правильный ответ/n${question.question}" to status.color
