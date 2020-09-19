@@ -38,7 +38,8 @@ object PreferencesRepository {
     }
 
     //создаем зеркальный метод чтобы получать текущее значение нашей темы
-    fun getAppTheme () : Int = prefs.getInt(APP_THEME, AppCompatDelegate.MODE_NIGHT_NO)
+    fun getAppTheme(): Int = prefs.getInt(APP_THEME, AppCompatDelegate.MODE_NIGHT_NO)
+
 
 
     //реализация сохранения профайла   ключ - значение
@@ -54,20 +55,22 @@ object PreferencesRepository {
         }
     }
 
-    private fun putValue(pair: Pair<String, Any>) = with(prefs.edit()) {
+
+    private fun putValue(pair: Pair<String, Any>) = with(prefs.edit()){
         val key = pair.first
         val value = pair.second
 
-        when (value) {
+        when(value){
             is String -> putString(key, value)
-            is Int -> putInt(key, value)
-            is Boolean -> putBoolean(key, value)
-            is Long -> putLong(key, value)
-            is Float -> putFloat(key, value)
+            is Int ->  putInt(key, value)
+            is Boolean ->  putBoolean(key, value)
+            is Long ->  putLong(key, value)
+            is Float ->  putFloat(key, value)
             else -> error("Only primitives types can be stored in Shared Preferences")
         }
-
         apply()
     }
+
+
 
 }

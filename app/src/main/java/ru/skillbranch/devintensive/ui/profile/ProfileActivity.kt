@@ -53,7 +53,6 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun initViewModel() {
         viewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
-
         viewModel.getProfileData().observe(this, Observer { updateUi(it) })
         viewModel.getTheme().observe(this, Observer { updateTheme(it) })
     }

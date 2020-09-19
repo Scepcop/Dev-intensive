@@ -19,16 +19,14 @@ import ru.skillbranch.devintensive.R
 import ru.skillbranch.devintensive.models.Profile
 import ru.skillbranch.devintensive.utils.Utils
 import ru.skillbranch.devintensive.utils.Utils.getDrawableInitials
-import ru.skillbranch.devintensive.viewmodels.ProfileViewModel
 
 class ProfileActivity : AppCompatActivity() {
-
 
     companion object {
         const val IS_EDIT_MODE = "IS_EDIT_MODE"
     }
 
-    private lateinit var viewModel: ProfileViewModel
+    private lateinit var viewModel: Pro
     private var isEditMode = false
     private lateinit var viewFields: Map<String, TextView>
 

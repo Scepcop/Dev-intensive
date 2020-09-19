@@ -1,6 +1,5 @@
 package ru.skillbranch.devintensive.viewmodels
 
-import android.app.AppComponentFactory
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.LiveData
@@ -37,12 +36,13 @@ class ProfileViewModel : ViewModel() {
     }
 
     //режим ночи включен или нет
-    fun switchTheme(){
-        if(appTheme.value == AppCompatDelegate.MODE_NIGHT_YES){
-            appTheme.value == AppCompatDelegate.MODE_NIGHT_NO
+    fun switchTheme() {
+        if (appTheme.value == AppCompatDelegate.MODE_NIGHT_YES) {
+            appTheme.value = AppCompatDelegate.MODE_NIGHT_NO
         } else {
-            appTheme.value == AppCompatDelegate.MODE_NIGHT_YES
+            appTheme.value = AppCompatDelegate.MODE_NIGHT_YES
         }
+
         repository.saveAppTheme(appTheme.value!!)
     }
 

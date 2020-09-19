@@ -1,5 +1,6 @@
 package ru.skillbranch.devintensive.utils
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -77,6 +78,7 @@ object Utils {
             .toString()
         else -> throw IllegalStateException("Incorrect state in 'when' expression")
     }
+    @SuppressLint("NewApi")
     fun getDrawableInitials(context: Context, initials: String): Drawable {
         val size = context.resources.getDimensionPixelSize(R.dimen.avatar_round_size)
         val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
