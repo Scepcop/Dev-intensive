@@ -1,5 +1,6 @@
 package ru.skillbranch.devintensive.ui.profile.custom
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.graphics.drawable.BitmapDrawable
@@ -16,6 +17,7 @@ import ru.skillbranch.devintensive.extensions.dpToPx
 import ru.skillbranch.devintensive.extensions.pxToDp
 import kotlin.math.min
 
+@SuppressLint("AppCompatCustomView")
 class CircleImageView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
