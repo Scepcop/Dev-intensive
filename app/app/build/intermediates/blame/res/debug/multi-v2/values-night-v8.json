@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/tanya/Downloads/dev-intensive-2019-hometask_4-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/tanya/Downloads/dev-intensive-2019-hometask_4-master/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "13",
+                        "endColumns": "12",
+                        "endOffsets": "647"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "12",
+                        "endColumns": "12",
+                        "endOffsets": "646"
+                    }
+                },
+                {
+                    "source": "/Users/tanya/.gradle/caches/transforms-2/files-2.1/2fbb997e5539a9f5e321047034e7dd86/appcompat-1.1.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "651,721,805,889,985,1087,1189,1283",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "716,800,884,980,1082,1184,1278,1367"
+                    }
+                }
+            ]
+        }
+    ]
+}
